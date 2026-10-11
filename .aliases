@@ -1,8 +1,14 @@
-alias ll='ls -la'
+alias ll='ls -lah --color=auto'
+alias ls='ls --color=auto'
 alias gs='git status'
 alias c='clear'
 alias vim='nvim'
+alias v='nvim'
 alias grep='grep --color=auto'
 alias cdr='cd ~/repos/'
 alias cdd='cd ~/Downloads/'
 alias gitvimdiff='git difftool --tool=nvimdiff --no-prompt'
+
+# tmux: attach to the last session, or create one
+alias t='tmux new-session -A -s main'
+alias tl='tmux list-sessions'
